@@ -1,14 +1,16 @@
-import React from 'react'
-import {Bar} from "react-chartjs-2"
-import BackButton from "./BackButton"
-// eslint-disable-next-line import/no-anonymous-default-export
+import React from 'react';
+import {useState} from 'react';
+import {Bar} from "react-chartjs-2";
+import {Item} from "./BackButton";
+import Coin from './Coin';
 function Chart() {
 
       return (
 
         <div className="bar-container">
+             <Item />
             <div>
-                <h1>Graph</h1>
+                <h1>Graph is below</h1>
             </div>
             <div className="bar-chart">
                 <Bar

@@ -1,15 +1,14 @@
-// import React from 'react';
-// import { Link } from 'react-router-dom';
+import React from 'react';
+import { useHistory } from "react-router-dom";
+import { BiArrowBack } from "react-icons/bi";
 
-// const BackButton = ({ match }) => {
-//     const arr = match.path.split('/');
-//     const currPage = arr[arr.length - 1];
-//     const parentPath = arr
-//         .filter((item) => {
-//             return item !== currPage;
-//         })
-//         .join('/');
-//     return <Link to={parentPath}>{`<-- Back`}</Link>;
-// };
-
-// export default BackButton;
+export const Item = () => {
+    let history = useHistory();
+    return (
+        <>
+        <div className="back-btn-container">
+          <button onClick={() => history.goBack()}><BiArrowBack /></button>
+        </div>
+        </>
+    );
+};
