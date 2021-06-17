@@ -1,19 +1,20 @@
 import React from 'react';
-import {useState} from 'react';
-import {Bar} from "react-chartjs-2";
+import {Line} from "react-chartjs-2";
 import {Item} from "./BackButton";
-import Coin from './Coin';
+
 function Chart() {
+
+    
 
       return (
 
         <div className="bar-container">
              <Item />
-            <div>
-                <h1>Graph is below</h1>
+            <div className="graph-title">
+                <h1>Crypto-Graph</h1>
             </div>
             <div className="bar-chart">
-                <Bar
+                <Line
                     data={{
                         labels: ['Price', 'Market Cap'],
                         datasets: [

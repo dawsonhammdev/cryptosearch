@@ -61,3 +61,13 @@
   margin-left:  20px;
   margin-bottom: 20px;
 }
+
+.graph-title {
+  margin-left: 4%;
+}
+
+.bar-chart {
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-top: 4%;
+}
