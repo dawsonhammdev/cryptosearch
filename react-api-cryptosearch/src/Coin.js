@@ -16,7 +16,7 @@ const Coin = ({ image, name, symbol, price, volume, priceChange, marketcap}) => 
                     </div>
                     <div className='coin-data'>
                         <p className='coin-price'>${price}</p>
-                        <p classNAme='coin-volume'>${volume.toLocaleString()}</p>
+                        <p className='coin-volume'>${volume.toLocaleString()}</p>
                         {priceChange < 0 ? (
                         <p className='coin-percent red'>{priceChange.toFixed(2)}%</p>
                         ) : (
@@ -27,11 +27,11 @@ const Coin = ({ image, name, symbol, price, volume, priceChange, marketcap}) => 
                         </p>
                     </div>
                 </div>
-                <dic className="front">
+                <div className="front">
                     <div className="middle">
                         <button className="btngraph" onClick={() => history.push('/graph')}>See Graph</button>
                     </div>
-                </dic>
+                </div>
             </div>
                 
             
